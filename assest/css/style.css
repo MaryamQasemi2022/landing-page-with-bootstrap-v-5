@@ -136,16 +136,16 @@ header nav.navbar {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-
 @media screen and (min-width: 992px) {
-  nav.navbar {
-    background-color: transparent !important;
-  }
-  .header_scrolled {
-    background-color: white !important;
-    box-shadow: 0px 2px 15px 5px rgba(221, 221, 221, 0.452);
+  header nav.navbar {
+    background-color: transparent;
   }
 }
+header nav.navbar.header_scrolled {
+  background-color: white !important;
+  box-shadow: 0px 2px 15px 5px rgba(221, 221, 221, 0.452);
+}
+
 .intro {
   width: 100%;
   min-height: 100vh;
