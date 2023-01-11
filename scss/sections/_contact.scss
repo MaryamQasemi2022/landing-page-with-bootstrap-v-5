@@ -1,0 +1,18 @@
+@import "../colors";
+
+.contact {
+  .info-box {
+    background-color: $white-blue;
+    padding: 30px;
+    height: 100%;
+  }
+
+  i {
+    font-size: 40px;
+    color: $dark-blue;
+  }
+  form {
+    background-color: $white-blue;
+    height: 100%;
+  }
+}

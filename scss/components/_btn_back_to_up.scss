@@ -1,0 +1,16 @@
+@import "../_mixin.scss";
+
+.btn_back_to_up {
+  position: fixed;
+  right: -4rem;
+  bottom: 2rem;
+  @include Icon(#ffc107, 1.7rem, 3px);
+  transition: all 0.8s ease-in;
+  -webkit-transition: all 0.8s ease-in;
+  -moz-transition: all 0.8s ease-in;
+  -ms-transition: all 0.8s ease-in;
+  -o-transition: all 0.8s ease-in;
+  &.show {
+    right: 2rem;
+  }
+}

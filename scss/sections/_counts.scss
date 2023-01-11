@@ -1,0 +1,36 @@
+@import "../colors";
+
+.counts {
+  div.blue {
+    i {
+      color: $blue;
+    }
+    span {
+      color: $dark-blue;
+    }
+  }
+  div.yellow {
+    i {
+      color: $yellow;
+    }
+    span {
+      color: $dark-yellow;
+    }
+  }
+  div.green {
+    i {
+      color: $green;
+    }
+    span {
+      color: $dark-green;
+    }
+  }
+  div.orange {
+    i {
+      color: $orange;
+    }
+    span {
+      color: $dark-orange;
+    }
+  }
+}

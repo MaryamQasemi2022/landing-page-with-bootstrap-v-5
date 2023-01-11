@@ -1,0 +1,36 @@
+@import "../colors";
+@import "../mixin";
+
+footer {
+  ul.list-links {
+    li::before {
+      content: "\F284";
+      font-family: "bootstrap-icons";
+      margin-left: 0.2rem;
+      color: black;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      a {
+        color: black;
+      }
+      &:hover::before,
+      &:hover a {
+        color: $orange;
+      }
+    }
+  }
+  .social-media {
+    @include Icon($orange);
+  }
+
+  .container-fluid {
+    > div:last-child {
+      background-color: lighten($light-blue, 10%);
+      text-align: center;
+    }
+  }
+}

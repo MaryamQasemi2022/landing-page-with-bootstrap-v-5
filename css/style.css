@@ -1,0 +1,309 @@
+@import url(./font.css);
+:root {
+  --blue: #0dc3e7;
+  --light-blue: #9be7f760;
+  --dark-blue: #4154f1;
+  --white-blue: #fafbff;
+  --green: #08da4e;
+  --light-green: #cffddf;
+  --orange: #f68c09;
+  --light-orange: #fde3c4;
+}
+
+body,
+*,
+*::after,
+*::before {
+  font-family: "shabnam";
+  font-weight: normal;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding-right: 0;
+}
+
+/* utilies */
+.hover-grow {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.hover-grow:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* header */
+nav.navbar {
+  padding: 20px 0;
+  background-color: white;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.header_scrolled {
+  background-color: white !important;
+  box-shadow: 0px 2px 15px 5px rgba(221, 221, 221, 0.452);
+}
+@media screen and (min-width: 992px) {
+  nav.navbar {
+    background-color: transparent;
+  }
+}
+
+/* intro */
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/intro/intro-bg.png") top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ABOUT */
+.content {
+  padding: 40px;
+  background-color: #f6f9ff;
+}
+/* COUNTS */
+.counts div.blue i {
+  color: var(--light-blue);
+}
+.counts div.blue span {
+  color: var(--blue);
+}
+
+.counts div.yellow i {
+  color: #ffc107c2;
+}
+.counts div.yellow span {
+  color: #ffc107;
+}
+
+.counts div.green i {
+  color: var(--light-green);
+}
+.counts div.green span {
+  color: var(--green);
+}
+
+.counts div.orange i {
+  color: #c45800a9;
+}
+.counts div.orange span {
+  color: #c45800;
+}
+
+/* services */
+.services .service-box {
+  padding: 60px 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.services .service-box .icon {
+  border-radius: 5px;
+  font-size: 40px;
+  display: inline-block;
+  padding: 20px;
+  line-height: 0;
+  margin-bottom: 0.8rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.services .service-box a {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .service-box a i {
+  line-height: 0;
+  margin-right: 0.2rem;
+  font-size: 1.3rem;
+}
+
+/* blue */
+.services .service-box.blue {
+  border-bottom: 3px solid var(--blue);
+}
+.services .service-box.blue:hover {
+  background-color: var(--blue);
+}
+.services .service-box.blue a {
+  color: var(--blue);
+}
+
+.services .service-box.blue .icon {
+  color: var(--blue);
+  background-color: var(--light-blue);
+}
+
+.services .service-box.blue a i {
+  color: var(--blue);
+}
+.services .service-box.blue a {
+  color: var(--blue);
+}
+
+/* orange */
+.services .service-box.orange {
+  border-bottom: 3px solid var(--orange);
+}
+.services .service-box.orange:hover {
+  background-color: var(--orange);
+}
+.services .service-box.orange .icon {
+  color: var(--orange);
+  background-color: var(--light-orange);
+}
+
+.services .service-box.orange a i {
+  color: var(--orange);
+}
+.services .service-box.orange a {
+  color: var(--orange);
+}
+
+/* green */
+.services .service-box.green {
+  border-bottom: 3px solid var(--green);
+}
+.services .service-box.green:hover {
+  background-color: var(--green);
+}
+.services .service-box.green .icon {
+  color: var(--green);
+  background-color: var(--light-blue);
+}
+
+.services .service-box.green a i {
+  color: var(--green);
+}
+
+.services .service-box.green a {
+  color: var(--green);
+}
+
+/* hover */
+.services .service-box:hover,
+.services .service-box:hover a,
+.services .service-box:hover a i {
+  color: white;
+}
+.services .service-box:hover .icon {
+  background-color: white;
+}
+
+/* PRICINGS */
+.pricing-box ul li {
+  padding: 5px 0;
+}
+/* contact */
+.contact .info-box {
+  background-color: var(--white-blue);
+  padding: 30px;
+  height: 100%;
+}
+.contact i {
+  font-size: 40px;
+  color: var(--dark-blue);
+}
+.contact form {
+  background-color: var(--white-blue);
+  height: 100%;
+}
+/* footer */
+.footer ul.list-links li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.footer ul.list-links li a {
+  color: black;
+}
+
+.footer ul.list-links li::before {
+  content: "\F284";
+  font-family: "bootstrap-icons";
+  margin-left: 0.2rem;
+  color: black;
+}
+
+.footer ul.list-links li:hover::before,
+.footer ul.list-links li:hover a {
+  color: var(--orange);
+}
+.footer .container-fluid > div:last-child {
+  background-color: var(--light-blue);
+  text-align: center;
+}
+
+.footer .social-media a {
+  display: inline-block;
+}
+.footer .social-media a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--orange);
+  padding: 0.4rem;
+  margin-left: 0.2rem;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.footer .social-media a:hover i {
+  background-color: var(--orange);
+  color: white;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
